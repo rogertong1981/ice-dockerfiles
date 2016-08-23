@@ -11,7 +11,7 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv 5E6DA83306132997 \
     && apt-get update \
     && apt-get install --no-install-recommends --no-install-suggests -y \
             zeroc-icegrid=${ICEGRID_VERSION}-* \
-    && apt-get instll --no-install-recommends --no-install-suggests -y mono-complete \
+    && apt-get install --no-install-recommends --no-install-suggests -y mono-complete \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 EXPOSE 4061 4062
